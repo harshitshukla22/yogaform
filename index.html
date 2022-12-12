@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration for Yoga</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <br />
+    <br />
+    <form action="connect.php" method="post">
+      <div class="container">
+        <center><h1>Registration for Yoga</h1></center>
+        <hr />
+        <b><label> Firstname </label></b>
+        <input
+          type="text"
+          name="firstname"
+          placeholder="Enter Firstname"
+          size="15"
+          required
+        />
+        <b><label> Middlename: </label></b>
+        <input
+          type="text"
+          name="middlename"
+          placeholder="Enter Middlename"
+          size="15"
+        />
+        <b><label> Lastname: </label></b>
+        <input
+          type="text"
+          name="lastname"
+          placeholder="Enter Lastname"
+          size="15"
+          required
+        />
+        <div>
+          <b><label> Age : </label></b>
+          <select>
+            <option name="age" value="Age">Choose Age</option>
+            <option name="age" value="18-30">18-30</option>
+            <option name="age" value="31-42">31-42</option>
+            <option name="age" value="43-54">43-54</option>
+            <option name="age" value="55-65">55-65</option>
+          </select>
+        </div>
+        <div>
+          <b><label> Gender : </label></b><br />
+          <input type="radio" value="Male" name="gender" /> Male
+          <input type="radio" value="Female" name="gender" /> Female
+          <input type="radio" value="Other" name="gender" /> Other
+        </div>
+        <b><label> Contact : </label></b>
+        <input
+          type="text"
+          name="number"
+          placeholder=" Enter Phone no."
+          size="10"
+          required
+        />
+        <b><label for="email">Email</label></b>
+        <input type="text" placeholder="Enter Email" name="email" required />
+        <b><label> Current Address: </label></b>
+        <textarea cols="80" rows="5" name="currentAddress" placeholder="Current Address" value="address" required></textarea> 
+        </textarea>
+        
+        <b><label> Choose your Yoga Batch : </label></b>
+        <select>
+          <option name="batch" value="Age">Choose Batch</option>
+          <option name="batch" value="6-7">6-7 AM</option>
+          <option name="batch" value="7-8">7-8 AM</option>
+          <option name="batch" value="8-9">8-9 AM</option>
+          <option name="batch" value="5-6">5-6 PM</option>
+        </select><br><br>
+        <b><label for="Date">Date of Joining :</label></b>
+        <input type="date" id="Date" name="date"><br><br>
+
+
+        <center><h1>Pay to Book Your Slot</h1></center>
+        <hr />
+        <b><label>Fees : Rs.500</label></b>
+        <div>
+          <b><label> Pay Through : </label></b>
+          <input type="radio" value="Credit Card" name="card" /> Credit Card
+          <input type="radio" value="Debit Card" name="card" /> Debit Card
+        </div>
+        <div class="card">
+          <b><label>Accepted Card</label></b><br><br>
+          <a type="select" name="selectcard" href="#"><img src="./1.jpg" alt=""></a>
+          <a type="select" name="selectcard" href="#"><img src="./2.jpg" alt=""></a>
+          <a type="select" name="selectcard" href="#"><img src="./3.jpg" alt=""></a>
+          <a type="select" name="selectcard" href="#"><img src="./4.jpg" alt=""></a>
+        </div><br><br><br>
+        <b><label>Card Details :</label></b>
+        <input type="text" name="cardDetails" placeholder="Enter Card Number" required>
+        <br>
+        <b><label> Exp Month : </label></b>
+        <select>
+          <option name="month" value="month">Choose Month</option>
+          <option name="month" value="Jan">Jan</option>
+          <option name="month" value="Feb">Feb</option>
+          <option name="month" value="March">March</option>
+          <option name="month" value="April">April</option>
+          <option name="month" value="May">May</option>
+          <option name="month" value="June">June</option>
+          <option name="month" value="July">July</option>
+          <option name="month" value="Aug">Aug</option>
+          <option name="month" value="Sep">Sep</option>
+          <option name="month" value="Oct">Oct</option>
+          <option name="month" value="Nov">Nov</option>
+          <option name="month" value="Dec">Dec</option>
+        </select>
+        <div id="zip">
+          <label><b>Exp Year : </b></label>
+            <select>
+              <option name="year" value="year">Choose Year</option>
+              <option name="year" value="2022">2022</option>
+              <option name="year" value="2023">2023</option>
+              <option name="year" value="2024">2024</option>
+              <option name="year" value="2025">2025</option>
+              <option name="year" value="2026">2026</option>
+              <option name="year" value="2027">2027</option>
+              <option name="year" value="2028">2028</option>
+              <option name="year" value="2029">2029</option>
+              <option name="year" value="2030">2030</option>
+            </select><br><br>
+            <b><label>Bank Name :</label></b>
+              <input type="text" name="Bankname" placeholder="Enter Bank Name" required>
+            <br>
+             <b><label>IFSC Code :</label></b>
+              <input type="text" name="IFSCcode" placeholder="Enter IFSC Code" required>
+            <br>
+            <label for="psw"><b>CVV : </b></label><br>  
+            <input type="password" placeholder="Enter CVV" name="psw" required><br> 
+            <button class="button-21" role="button">Pay & Submit</button>  
+        </div>
+    </form>
+  </body>
+</html>
+
+
+
+
+
+
+
